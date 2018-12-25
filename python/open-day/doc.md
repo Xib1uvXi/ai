@@ -9,4 +9,4 @@
 
 在介绍DQN之前，先简单介绍下强化学习
 
-![rl agent](../img/Rl_agent.png)
+![rl agent](./img/Rl_agent.png)
