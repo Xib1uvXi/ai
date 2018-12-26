@@ -10,3 +10,6 @@
 在介绍DQN之前，先简单介绍下强化学习
 
 ![rl agent](./img/Rl_agent.png)
+
+> 图片来源： https://simple.wikipedia.org/wiki/Reinforcement_learning
+
