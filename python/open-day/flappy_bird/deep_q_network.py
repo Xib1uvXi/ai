@@ -91,6 +91,10 @@ def trainNetwork(s, readout, h_fc1, sess):
     # store the previous observations in replay memory
     D = deque()
 
+    # printing
+    a_file = open("logs_" + GAME + "/readout.txt", 'w')
+    h_file = open("logs_" + GAME + "/hidden.txt", 'w')
+
     # get the first state by doing nothing and preprocess the image to 80x80x4
     do_nothing = np.zeros(ACTIONS)
     do_nothing[0] = 1
@@ -194,12 +198,12 @@ def trainNetwork(s, readout, h_fc1, sess):
               "/ EPSILON", epsilon, "/ ACTION", action_index, "/ REWARD", r_t, \
               "/ Q_MAX %e" % np.max(readout_t))
         # write info to files
-        '''
-        if t % 10000 <= 100:
-            a_file.write(",".join([str(x) for x in readout_t]) + '\n')
-            h_file.write(",".join([str(x) for x in h_fc1.eval(feed_dict={s:[s_t]})[0]]) + '\n')
-            cv2.imwrite("logs_tetris/frame" + str(t) + ".png", x_t1)
-        '''
+        # '''
+        # if t % 10000 <= 100:
+            # a_file.write(",".join([str(x) for x in readout_t]) + '\n')
+            # h_file.write(",".join([str(x) for x in h_fc1.eval(feed_dict={s:[s_t]})[0]]) + '\n')
+            # cv2.imwrite("logs_tetris/frame" + str(t) + ".png", x_t1)
+        # '''
 
 def playGame():
     sess = tf.InteractiveSession()
