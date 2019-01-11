@@ -105,6 +105,9 @@ def trainNetwork(s, readout, h_fc1, sess):
 
     # saving and loading networks
     saver = tf.train.Saver()
+
+    tf.summary.FileWriter("tensorboard/", sess.graph)
+
     sess.run(tf.initialize_all_variables())
     checkpoint = tf.train.get_checkpoint_state("saved_networks")
     if checkpoint and checkpoint.model_checkpoint_path:
