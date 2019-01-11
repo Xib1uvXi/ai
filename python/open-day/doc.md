@@ -68,4 +68,4 @@ Q-Learning 中的 Gamma
 <img src="./img/flappy_bird_demp.gif" width="250">
 
 
-![nt](show-dqn.pdf)
+[nt](show-dqn.pdf)
