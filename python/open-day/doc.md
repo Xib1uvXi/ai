@@ -66,3 +66,6 @@ Q-Learning 中的 Gamma
 ### Using Deep Q-Network to Learn How To Play Flappy Bird
 
 <img src="./img/flappy_bird_demp.gif" width="250">
+
+
+![nt](show-dqn.pdf)
